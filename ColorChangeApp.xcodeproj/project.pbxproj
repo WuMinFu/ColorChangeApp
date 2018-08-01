@@ -12,7 +12,9 @@
 		0420883C2109E40500FF917A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0420883A2109E40500FF917A /* Main.storyboard */; };
 		0420883E2109E40500FF917A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0420883D2109E40500FF917A /* Assets.xcassets */; };
 		042088412109E40500FF917A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0420883F2109E40500FF917A /* LaunchScreen.storyboard */; };
-		042088492109F78000FF917A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042088482109F78000FF917A /* LoginViewController.swift */; };
+		042088492109F78000FF917A /* ColorChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042088482109F78000FF917A /* ColorChangeVC.swift */; };
+		04261FF7210F273E0016CEF5 /* RainbowColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04261FF6210F273E0016CEF5 /* RainbowColorVC.swift */; };
+		0478F5DB2111F63600AD37FB /* imageChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478F5DA2111F63600AD37FB /* imageChangeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		0420883D2109E40500FF917A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042088402109E40500FF917A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042088422109E40500FF917A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		042088482109F78000FF917A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		042088482109F78000FF917A /* ColorChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeVC.swift; sourceTree = "<group>"; };
+		04261FF6210F273E0016CEF5 /* RainbowColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowColorVC.swift; sourceTree = "<group>"; };
+		0478F5DA2111F63600AD37FB /* imageChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageChangeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				042088362109E40500FF917A /* AppDelegate.swift */,
 				042088382109E40500FF917A /* ViewController.swift */,
 				0420883A2109E40500FF917A /* Main.storyboard */,
-				042088482109F78000FF917A /* LoginViewController.swift */,
+				04261FF6210F273E0016CEF5 /* RainbowColorVC.swift */,
+				0478F5DA2111F63600AD37FB /* imageChangeVC.swift */,
+				042088482109F78000FF917A /* ColorChangeVC.swift */,
 				0420883D2109E40500FF917A /* Assets.xcassets */,
 				0420883F2109E40500FF917A /* LaunchScreen.storyboard */,
 				042088422109E40500FF917A /* Info.plist */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042088492109F78000FF917A /* LoginViewController.swift in Sources */,
+				042088492109F78000FF917A /* ColorChangeVC.swift in Sources */,
+				04261FF7210F273E0016CEF5 /* RainbowColorVC.swift in Sources */,
+				0478F5DB2111F63600AD37FB /* imageChangeVC.swift in Sources */,
 				042088392109E40500FF917A /* ViewController.swift in Sources */,
 				042088372109E40500FF917A /* AppDelegate.swift in Sources */,
 			);

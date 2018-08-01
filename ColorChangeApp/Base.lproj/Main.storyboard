@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uUu-bA-rBg">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RkR-Rj-LJB">
                                 <rect key="frame" x="134" y="371" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="colorSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="nuq-7G-KVP"/>
                                 </connections>
@@ -111,7 +111,7 @@
                                     <action selector="colorIsEnabledSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bjd-Dq-osf"/>
                                 </connections>
                             </switch>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-hS-ajv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-hS-ajv">
                                 <rect key="frame" x="170" y="641" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Color ChangeVC-->
         <scene sceneID="ynG-ru-zpU">
             <objects>
-                <viewController id="hwp-Ip-iIS" customClass="LoginViewController" customModule="ColorChangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hwp-Ip-iIS" customClass="ColorChangeVC" customModule="ColorChangeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0O6-eo-iJz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,6 +194,63 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="905" y="126"/>
+        </scene>
+        <!--Rainbow ColorVC-->
+        <scene sceneID="yXk-47-x0B">
+            <objects>
+                <viewController id="uUu-bA-rBg" customClass="RainbowColorVC" customModule="ColorChangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2Q-Qf-u7U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Dja-f8-Vqb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="biU-LW-weF" appends="YES" id="Iay-3V-X1h"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nty-kl-xY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="biU-LW-weF">
+                    <connections>
+                        <action selector="colorChange:" destination="uUu-bA-rBg" id="0An-nR-Mhm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1705" y="126"/>
+        </scene>
+        <!--Image ChangeVC-->
+        <scene sceneID="8Tv-TQ-1yJ">
+            <objects>
+                <viewController id="xRK-sw-Q2M" customClass="imageChangeVC" customModule="ColorChangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r35-WW-iwQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-On-8KU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.70415581599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="L36-aT-xQh"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="BJK-bG-DhD" appends="YES" id="Tfe-lA-Q9t"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Urd-On-8KU" id="1nJ-u1-IsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrK-zk-yif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BJK-bG-DhD">
+                    <connections>
+                        <action selector="imageChangeClick:" destination="xRK-sw-Q2M" id="F2S-AL-bdk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2485.5999999999999" y="125.61576354679804"/>
         </scene>
     </scenes>
     <resources>
